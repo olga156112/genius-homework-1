@@ -44,6 +44,9 @@ body {
     font-weight: 400;
 }
 
+ul {
+    list-style-type: none;
+}
 /* logo */
 .logo {
     font-family: 'Play';
@@ -74,7 +77,7 @@ body {
     font-size: 12px;
     line-height: 1.5;
 }
-
+/* link */
 .link {
     color: #011C44;
     font-weight: 400;
@@ -83,10 +86,16 @@ body {
 }
 
 .link:hover {
-    color: #2B7FFF;
+    color: var(--color-brand-light);
     font-weight: 700;
 }
 
+/* Address link */
+.address-link {
+
+    font-size: 16px;
+    color: #FFFFFF;
+}
 .button {
     color: #FFFFFF;
     font-size: 18px;
