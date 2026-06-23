@@ -1,0 +1,155 @@
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v51-latin-regular.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/roboto-v51-latin-600.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v21-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v21-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+--color-brand-light: #2B7FFF;
+--color-brand-dark: #011C44;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+/* logo */
+.logo {
+    font-family: 'Play';
+    color: #2B7FFF;
+    font-weight: 700;
+    line-height: 0.9;
+    text-transform: capitalize;
+}
+
+.navigation .logo {
+    font-size: 22px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.main-section .before-logo {
+    font-size: 18px;
+    text-align: center;
+}
+
+.main-section .logo {
+    text-align: center;
+    font-size: 140px;
+    line-height: 0.8;
+}
+
+.main-section .after-logo {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.link {
+    color: #011C44;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #2B7FFF;
+    font-weight: 700;
+}
+
+.button {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--color-brand-light);
+    border-radius: 2px;
+    border-color: var(--color-brand-light);
+    
+}
+
+.button:hover {
+    color: var(--color-brand-dark) ;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 2px;
+    border-color: var(--color-brand-light);
+}
+
+/* Заголовки і текст */
+.title {
+    font-family: 'Play';
+    font-size: 64px;
+    font-weight: 700;
+}
+.title .accent {
+    color: var(--color-brand-light);
+}
+
+/* center title */
+.center-title .title {
+    font-family: 'Play';
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    }
+    
+.center-title .title .accent {
+    color: var(--color-brand-light);
+    }
+
+.section-about-us .main-text {
+    font-family: 'Roboto';
+    font-size: 22px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: var(--color-brand-dark);
+}
+
+.section-about-us .accent {
+    font-weight: 600;
+}
+
+/*  */
+.center-title .advantages {
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+    color: #000000;
+}
+.for-photos {
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+}
