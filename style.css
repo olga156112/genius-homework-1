@@ -52,15 +52,14 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 88px 0;
 }
 
 .container-center {
   width: 100%;
-  max-width: 1440px;
-  justify-content: center;
+  max-width: 1240px;
   padding: 48px 0;
   margin: 0 auto;
 }
@@ -426,6 +425,11 @@ ul {
   text-align: center;
 }
 
+.maps {
+  display: flex;
+  justify-content: center;
+}
+
 .map {
   border: none;
   border-radius: 32px;
@@ -454,7 +458,7 @@ ul {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 80px;
+  gap: 186px;
 }
 
 .footer-list,
@@ -469,17 +473,18 @@ ul {
 }
 
 .footer-contact {
+  display: flex;
   font-style: normal;
 }
 
 .footer-info {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .footer-menu,
 .address-link {
+  max-width: 192px;
   color: white;
   text-decoration: none;
 }
@@ -489,65 +494,35 @@ ul {
   color: var(--color-brand-light);
 }
 
-/* .footer-container {
+.address-icon-footer {
+  fill: var(--color-white);
+}
+
+.address-icon-footer:hover {
+  fill: var(--color-brand-light);
+}
+
+.footer-address{
+  flex-grow: 1;
+}
+
+.social-footer{
   display: flex;
-  gap: 186px;
-  width: 100%;
-  padding: 56px 100px;
-  justify-content: space-between;
-  align-items: center;
+  gap: 24px;
+  padding: 16px 0;
 }
-
-.footer-list,
-.footer-logo,
-.footer-contact ul {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-contact {
-  font-style: normal;
-}
-
-.footer-menu,
-.address-link {
-  color: white;
-  text-decoration: none;
-}
-
-/* .footer-logo,
-.footer-list,
-.footer-contact,
-.footer-info {
-  display: flex;
-  gap: 186px;
-} */
-
-/* .footer-menu {
-  color: var(--color-white);
-}
-
-.footer-menu:hover {
-  color: var(--color-brand-light);
-}
-
-.footer-section {
-  background-image: url(./images/footer-background.png);
-  background-color: var(--color-brand-dark);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-position: -207px -278px; */
-
-
-*/ 
 
 .footer-policy {
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 16px;
   font-weight: 400;
+  margin: 0;
 }
+
 .address-copyright {
   color: #747272;
   font-size: 13px;
-  font-weight: 400px;
+  font-weight: 400;
+  margin: 0;
+  padding: 16px 0;
 }
