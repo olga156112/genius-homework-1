@@ -44,6 +44,22 @@ a {
   text-decoration: none;
 }
 
+ul {
+list-style-type: none;
+padding-left: 0; 
+margin: 0; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 .link {
   margin-bottom: 0;
   flex-shrink: 0;
@@ -52,7 +68,7 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1288px;
   margin: 0 auto;
   padding: 88px 0;
 }
@@ -82,9 +98,9 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1440px;
-  margin: 32px 100px;
-  padding: 0 24px;
+  max-width: 1288px;
+  padding: 32px 24px;
+  margin: 0 auto;
 }
 
 .logo,
@@ -104,23 +120,18 @@ a {
 .navigation {
   display: flex;
   text-align: center;
-  gap: 240px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .header-menu {
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: center;
   gap: 56px;
 }
 
-.header-container {
-  padding: 32px 0;
-  display: flex;
-  align-items: center;
-  gap: 240px;
-  margin: 0 auto;
-}
+
 
 .contact {
   display: flex;
@@ -139,8 +150,7 @@ a {
 .address-item {
   display: flex;
   gap: 32px;
-  text-align: right;
-  justify-content: right;
+  align-items: center;
 }
 
 /* Main section */
@@ -153,7 +163,7 @@ a {
   background-image: url(./images/header-photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -1198px -191px 0 0;
+  background-position: right top;
 }
 
 .before-logo {
@@ -208,6 +218,7 @@ a {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  margin: 0;
 }
 
 ul {
@@ -243,22 +254,36 @@ ul {
   display: block;
 }
 
-/* .women-photo {
+.women-photo {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.images {
+  width: 328px;
+  height: 328px;
+  border-radius: 50%;
+  object-fit: cover;
   display: block;
-  justify-content: right;
-} */
+  margin: 0;
+}
+
+.images:nth-child(2) {
+  margin-left: 204px;
+}
 
 /* Чому люди обирають нас */
 
 .choose-title {
-  /* padding: 176px 0 0; */
   margin: 0;
 }
 
 .beauty-cards {
   display: flex;
   gap: 56px;
-  margin-top: 48px;
   padding: 0 0;
   justify-content: center;
 }
@@ -293,6 +318,14 @@ ul {
   padding: 0;
 }
 
+.mask {
+  width: 344px;
+  height: 456px;
+  object-fit: cover;
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+}
+
 .procedures {
   display: flex;
   justify-content: center;
@@ -314,6 +347,7 @@ ul {
   border: 1px solid var(--color-brand-dark);
   cursor: pointer;
 }
+
 .carousel-button:hover {
   background-color: var(--color-brand-light);
   fill: var(--color-white);
@@ -393,6 +427,8 @@ ul {
   font-size: 64px;
   font-weight: 700;
   text-align: center;
+  padding-bottom: 48px;
+  margin: 0;
 }
 
 .center-title .title .accent {
@@ -433,8 +469,7 @@ ul {
 .map {
   border: none;
   border-radius: 32px;
-  margin-top: 48px;
-  justify-content: right;
+  margin-bottom: 48px;
 }
 
 /* Footer */
@@ -448,9 +483,10 @@ ul {
 }
 
 .footer-container {
-  max-width: 1440px;
+  max-width: 1288px;
   margin: 0 auto;
-  padding: 56px 100px;
+  padding: 56px 0;
+  display: flex;
   gap: 186px;
 }
 
@@ -458,7 +494,7 @@ ul {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 186px;
+  width: 100%;
 }
 
 .footer-list,
